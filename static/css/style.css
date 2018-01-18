@@ -1,0 +1,43 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container-fluid {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	text-align: center;
+}
+
+.todo-container {
+	width: 400px;
+	margin: 0 auto;
+}
+
+.task-wrapper {
+	max-height: 400px;
+	overflow: auto;
+}
+
+.input-wrapper {
+	width: 400px;
+	margin: 0 auto;
+}
+
+#add-todo {
+}
+
+#text-box {
+}
+
+.add-btn {
+	border-radius: 0 10px 10px 0;
+	transition: 0.3s;
+}
+
+.form-input {
+	border-radius: 10px 0 0 10px;
+}

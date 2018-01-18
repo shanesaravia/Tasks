@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="static/css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="static/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+
+		<header>
+			<div class="jumbotron bg-dark">
+				<h1 class="text-light">To Do List 1.0</h1>
+			</div>
+		</header>
+		<content>
+			<div class="container-fluid">
+				<div class="input-wrapper input-group mb-5">
+		      <input id="task-input" type="text" class="form-input form-control" placeholder="Enter todo here...">
+		      <span class="input-group-btn">
+		      	<button id="add-task" class="btn btn-secondary bg-primary add-btn px-4" type="button">+</button>
+		      </span>
+		    </div>
+				<div class="todo-container">
+			    <h4 class="text-center">Tasks</h4>
+			    <hr>
+			    <div class="task-wrapper">
+						<ul id="task-list" class="list-group">
+						</ul>
+					</div>
+				</div>
+			</div>
+		</content>
+		<footer>
+		</footer>
+		<script src="static/js/script.js"></script>
+	</body>
+</html>
