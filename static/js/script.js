@@ -5,17 +5,29 @@ function addTask() {
 	let text = document.createTextNode(inputValue);
 	item.appendChild(text);
 	document.getElementById('task-input').value = "";
-	if (inputValue === '') {
+	if (inputValue == '') {
 		alert('Cannot add empty task.');
 	} else {
 		document.getElementById('task-list').appendChild(item);
+		addDelete();
 	}
 }
 
-// function removeTask() {
-// 	let tasks = document.getElementsByTagName('li');
-// 	for ()
-// };
+function addDelete() {
+	let tasks = document.getElementsByTagName('li');
+	let delButton = document.createElement('span');
+	let text = document.createTextNode('x');
+	delButton.className = 'deletebtn';
+	delButton.href="#";
+	delButton.appendChild(text);
+	for (i = 0; i < tasks.length; i++) {
+		tasks[i].appendChild(delButton);
+		delButton.addEventListener('click', function() {
+			let task = this.parentElement;
+			task.parentElement.removeChild(task);
+		})
+	}
+}
 
 document.getElementById('add-task').addEventListener('click', function() {
 	addTask();

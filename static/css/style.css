@@ -27,17 +27,40 @@ header {
 	margin: 0 auto;
 }
 
+#task-list {
+	transition: 0.5s;
+}
+
+#task-list li {
+	position: relative;
+	transition: 0.5s;
+}
+
+.deletebtn {
+	position: absolute;
+	right: 0;
+	padding: 0 20px;
+	color: grey;
+	cursor: pointer;
+}
+
+.deletebtn:hover {
+	color: red;
+	text-decoration: none;
+}
+
 #add-todo {
 }
 
 #text-box {
 }
 
-.add-btn {
-	border-radius: 0 10px 10px 0;
-	transition: 0.3s;
-}
 
 .form-input {
 	border-radius: 10px 0 0 10px;
+}
+
+.add-btn {
+	border-radius: 0 10px 10px 0;
+	transition: 0.3s;
 }
