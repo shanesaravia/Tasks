@@ -6,3 +6,7 @@ This is a simple Todo list app to help you remember and finish your daily tasks.
 
 ## Author
 Shane Saravia
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/shanesaravia/Tasks/blob/master/LICENSE) file for details.
