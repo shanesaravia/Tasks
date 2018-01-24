@@ -1,9 +1,6 @@
-body {
-	margin: 0;
-	padding: 0;
-}
+/* Layout----------------------------------------------- */
 
-.container-fluid {
+body {
 	margin: 0;
 	padding: 0;
 }
@@ -11,6 +8,38 @@ body {
 header {
 	text-align: center;
 }
+
+.container-fluid {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.left-col {
+	flex: 1;
+}
+
+.right-col {
+	flex: 1;
+}
+
+/* Form Input------------------------------------------- */
+
+.input-wrapper {
+	width: 400px;
+	margin: 0 auto;
+}
+
+.form-input {
+	border-radius: 10px 0 0 10px;
+}
+
+.add-btn {
+	border-radius: 0 10px 10px 0;
+	transition: 0.3s;
+}
+
+/* Task List--------------------------------------------- */
 
 .todo-container {
 	width: 400px;
@@ -22,45 +51,45 @@ header {
 	overflow: auto;
 }
 
-.input-wrapper {
-	width: 400px;
-	margin: 0 auto;
-}
-
-#task-list {
-	transition: 0.5s;
-}
-
-#task-list li {
+#task-list li, #task-list-completed li {
 	position: relative;
-	transition: 0.5s;
+	padding: 10px 0;
+}
+
+.check-box {
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	margin-right: 20px;
+	position: relative;
+	top: 5px;
 }
 
 .deletebtn {
 	position: absolute;
 	right: 0;
-	padding: 0 20px;
+	top: 0;
 	color: grey;
 	cursor: pointer;
+	background: transparent;
+	border: none;
+	vertical-align: center;
+	height: 100%;
+	padding: 0 20px;
+	transition: 0.3s;
+}
+
+.deletebtn:focus {
+	outline: none;
 }
 
 .deletebtn:hover {
-	color: red;
+	color: white;
+	background-color: red;
 	text-decoration: none;
 }
 
-#add-todo {
-}
-
-#text-box {
-}
-
-
-.form-input {
-	border-radius: 10px 0 0 10px;
-}
-
-.add-btn {
-	border-radius: 0 10px 10px 0;
-	transition: 0.3s;
+.completed {
+	text-decoration: line-through;
+	color: #CCC;
 }

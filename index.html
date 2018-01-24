@@ -7,26 +7,39 @@
 		<script src="static/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-
 		<header>
 			<div class="jumbotron bg-dark">
 				<h1 class="text-light">To Do List 1.0</h1>
 			</div>
 		</header>
 		<content>
+			<div class="input-wrapper input-group mb-5">
+	      <input id="task-input" type="text" class="form-input form-control" placeholder="Enter todo here...">
+	      <span class="input-group-btn">
+	      	<button id="add-task" class="btn btn-secondary bg-primary add-btn px-4" type="button">+</button>
+	      </span>
+	    </div>
 			<div class="container-fluid">
-				<div class="input-wrapper input-group mb-5">
-		      <input id="task-input" type="text" class="form-input form-control" placeholder="Enter todo here...">
-		      <span class="input-group-btn">
-		      	<button id="add-task" class="btn btn-secondary bg-primary add-btn px-4" type="button">+</button>
-		      </span>
-		    </div>
-				<div class="todo-container">
-			    <h4 class="text-center">Tasks</h4>
-			    <hr>
-			    <div class="task-container">
-						<ul id="task-list" class="list-group">
-						</ul>
+				<div class="left-col">
+					<div class="todo-container">
+				    <h4 class="text-center">Tasks</h4>
+				    <hr>
+				    <div class="task-container">
+							<ul id="task-list" class="list-group">
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="right-col">
+					<div class="left-col">
+						<div class="todo-container">
+					    <h4 class="text-center">Completed Tasks</h4>
+					    <hr>
+					    <div class="task-container">
+								<ul id="task-list-completed" class="list-group">
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
